@@ -37,3 +37,8 @@ The path in the URL shows the correct id for the company but the table always di
 ## Bug Three
 
 The id's for the employees on the table are labelled incorrectly. I think they should be labelled from 1 to x where x is the number of employees at the given company. They are currently labelled from 1 to y where y is the total number of employees at all companies combined.
+
+
+## Bug four
+
+I'm not sure about precise definition of middlename, but I would recommend making a third input field labelled Middlename in between Forename and Surname. However this field would be optional unlike the other two because not all people have middlenames.
