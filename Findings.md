@@ -20,7 +20,7 @@ I started the Rails server by typing `rails s` into the terminal.
 
 `localhost:3000/companies/id` - the id param in the URL represents the newly added company's id. The new listing is appended to the end of the Company table in the database. However the data rendered on the table on this page always shows the first entry of the database (Bug two). There are two buttons at the bottom of the page *'Add Employee'* and *'Back to companies List'*.
 
-`local:3000/companies/1/employees` - clicking on the *Add Employee* renders a form to fill in with two text inputs. An input for Forename and another for Surname. There are two buttons at the end of the form named *'Save'* and *'Back to employees list'*. If the user leaves one of the inputs blank they are prompted with an error message. If the user leaves the 'Forename' input blank they are given an error with 'Forename can't be blank' and 'Middlename can't be blank' (Bug three). Filling in both inputs still gives an error of 'Surname can't be blank' (Bug four). The employees' id are incorrectly labelled on the table (error five).
+`local:3000/companies/1/employees/new` - clicking on the *Add Employee* renders a form to fill in with two text inputs. An input for Forename and another for Surname. There are two buttons at the end of the form named *'Save'* and *'Back to employees list'*. If the user leaves one of the inputs blank they are prompted with an error message. If the user leaves the 'Forename' input blank they are given an error with 'Forename can't be blank' and 'Middlename can't be blank' (Bug three). Filling in both inputs still gives an error of 'Surname can't be blank' (Bug four). The employees' id are incorrectly labelled on the table (error five).
 
 `local:3000/companies` - this page renders a table listing all the companies that are saved in the database. There are two buttons for each listing called *'Show'* and *'Destroy'*. Destroy prompts the user with an alert and asks if they are sure they would like delete this listing. The show button will navigate the user to the page `localhost:3000/companies/id`. At the bottom of the table there is a button that navigates to creating a new company.
 
@@ -31,3 +31,5 @@ I started the Rails server by typing `rails s` into the terminal.
 I would recommend setting validation to adding a company into the database similar to where the Forename and Surname fields are required to be filled when adding an employee.
 
 ## Bug Two
+
+The path in the URL shows the correct id for the company but the table always displays the first company from the database. I think that there should be a conditional statement inside a loop to extract the correct company from the active record database.
