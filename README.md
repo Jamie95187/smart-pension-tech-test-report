@@ -14,7 +14,7 @@ I started the Rails server by typing `rails s` into the terminal.
 
 ## Navigating the website
 
-`localhost:3000` - works fine and has two buttons <span style="color:blue">*'Create New Company'*</span> and *'Companies List'*
+`localhost:3000` - works fine and has two buttons <span style="color:blue">**Create New Company**</span> and *'Companies List'*
 
 `localhost:3000/companies/new` - can navigate to the link by clicking *'Create New Company'* button on home page. We are presented with a form with a text input for *'Name'* of company and a text area to fill in for *'Details'*. A user can fill in duplicated company names and details (potential improvement one). They can also fill in a blank input for both entries (Bug one). At the bottom of the form there are two buttons. *'Save'* and the other *'Back to companies list'*.
 
