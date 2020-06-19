@@ -8,7 +8,9 @@ Cloning repository with `git clone git@github.com:smartpension/smart-cs-support-
 
 Following the instructions to run the application and using the command `bin/setup`. The gem dependencies and databases were set up via the bundle installation.
 
-![Image of database installation 10x50, 10%](./images/database-setup.png)
+<p align="center">
+<img src="./images/database-setup.png"  title="image of database installataion" width="600" height="400" />
+</p>
 
 I started the Rails server by using the `rails s` command in terminal.
 
@@ -84,3 +86,13 @@ The form label and text field were not the same, this meant that it could not ge
 ## GitHub Solutions
 
 Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions
+
+#container {
+    height:100px;
+    line-height:100px;
+}
+
+#container img {
+    vertical-align:middle;
+    max-height:100%;
+}
