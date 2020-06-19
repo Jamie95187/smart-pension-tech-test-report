@@ -1,10 +1,6 @@
 # Smart Pension Tech Test
 
-<<<<<<< HEAD
 | [Set Up](##Set Up) | [Navigating](##Navigating the website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions)
-=======
-| [Set Up](#set-up) | [Navigating](#navigating-the-website) | [Recommendations](#recommendations) |
->>>>>>> 49b3783deadb651ab7dcb840fcac032629b0dd1f
 
 ## Set Up
 
