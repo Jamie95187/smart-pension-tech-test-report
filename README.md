@@ -9,7 +9,7 @@ Cloning repository with `git clone git@github.com:smartpension/smart-cs-support-
 Following the instructions to run the application and using the command `bin/setup`. The gem dependencies and databases were set up via the bundle installation.
 
 <p align="center">
-<img src="./images/database-setup.png"  title="image of database installataion" width="600" height="400" />
+<img src="./images/database-setup.png"  title="image of database installataion" width="600" height="370" />
 </p>
 
 I started the Rails server by using the `rails s` command in terminal.
@@ -76,31 +76,26 @@ Upon further inspection into the database I would need to refactor how the Emplo
 <img src="./images/solution-bug-three.png"  title="image of solution to bug three" width="100%" height="200" />
 </p>
 
-![Image Solution to bug three](./images/solution-bug-three.png)
-
 ### Solution to Bug Four
 
 Adding an extra field inside the new employee view is similar to the input field for forename and surname. To make the middlename parameter optional I deleted it from the validate parameters inside the employee model.
 
-![Image solution to bug four a](./images/solution-bug-four-a.png)
-![Image solution to bug four b](./images/solution-bug-four-b.png)
+<p align="center">
+<img src="./images/solution-bug-four-a.png"  title="image of solution to bug four" width="500" height="110" />
+</p>
+
+<p align="center">
+<img src="./images/solution-bug-four-b.png"  title="image of solution to bug four b" width="95%" height="380" />
+</p>
 
 ### Solution to Bug Five
 
 The form label and text field were not the same, this meant that it could not get a surname input from the user. Renaming the form text field to surname fixed this bug. The three input fields looks like this inside the employee/new view.
 
-![Image solution to bug five](./images/solution-bug-five.png)
+<p align="center">
+<img src="./images/solution-bug-five.png"  title="image of solution to bug five" width="510" height="240" />
+</p>
 
 ## GitHub Solutions
 
 Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions
-
-#container {
-    height:100px;
-    line-height:100px;
-}
-
-#container img {
-    vertical-align:middle;
-    max-height:100%;
-}
