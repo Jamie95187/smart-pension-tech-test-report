@@ -54,19 +54,27 @@ These are potential solutions that can be made to the code to fix these issues.
 
 ### Solution to Bug One
 
-This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presnce, true`. Shown below:
+This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presence, true`. Shown below:
 
-![Image Solution to bug one | 250x50](./images/solution-bug-one.png)
+<p align="center">
+<img src="./images/solution-bug-one.png"  title="image of solution to bug one" width="600" height="120" />
+</p>
 
 ### Solution to Bug Two
 
 Deleting the line 11 in the Company Controller fixes this bug, this file can be found at `.app/controllers/companies_controller.rb` The Company variable was being referenced to the first entry in the Company Database. Refer to the image below:
 
-![Image Solution to bug two](./images/solution-bug-two.png)
+<p align="center">
+<img src="./images/solution-bug-two.png"  title="image of solution to bug two" width="600" height="110" />
+</p>
 
 ### Solution to Bug Three
 
 Upon further inspection into the database I would need to refactor how the Employee table and Company are connected. The image below shows that the table correctly renders the Employee ID stored within the database so I believe this is not one of the three suggested bugs.
+
+<p align="center">
+<img src="./images/solution-bug-three.png"  title="image of solution to bug three" width="100%" height="200" />
+</p>
 
 ![Image Solution to bug three](./images/solution-bug-three.png)
 
