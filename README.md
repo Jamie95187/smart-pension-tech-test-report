@@ -4,7 +4,7 @@
 
 ## Set Up
 
-Cloning repository with `git clone git@github.com:smartpension/smart-cs-support-test.git`.
+Cloning repository with `git clone https://github.com/smartpension/smart-cs-support-test.git`.
 
 Following the instructions to run the application and using the command `bin/setup`. The gem dependencies and databases were set up via the bundle installation.
 
