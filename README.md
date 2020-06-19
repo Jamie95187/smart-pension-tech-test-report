@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](##Set-Up) | [Navigating](##Navigating-the-website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions) | [GitHub Solution](##GitHub-Solutions)
+| [Set Up](##Set-Up) | [Navigating](##Navigating-the-website-and-finding-the-bugs) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions) | [GitHub Solutions](##GitHub-Solutions)
 
 ## Set Up
 
@@ -12,7 +12,7 @@ Following the instructions to run the application and using the command `bin/set
 
 I started the Rails server by using the `rails s` command in terminal.
 
-## Navigating the website
+## Navigating the website and finding the bugs
 
 * `localhost:3000` - works fine and has two buttons **Create New Company** and **Companies List**
 
@@ -28,7 +28,7 @@ I started the Rails server by using the `rails s` command in terminal.
 
 ### Bug One
 
-I would recommend setting validation to adding a company into the database similar to where the Forename and Surname fields are required to be filled when adding an employee.
+I would recommend setting requirement when adding a company into the database similar, to where the Forename and Surname fields are required to be filled when adding an employee.
 
 ### Bug Two
 
@@ -54,7 +54,7 @@ These are potential solutions that can be made to the code to fix these issues.
 
 This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presnce, true`. Shown below:
 
-![Image Solution to bug one](./images/solution-bug-one.png)
+![Image Solution to bug one](./images/solution-bug-one.png =100x20)
 
 ### Solution to Bug Two
 
@@ -81,6 +81,6 @@ The form label and text field were not the same, this meant that it could not ge
 
 ![Image solution to bug five](./images/solution-bug-five.png)
 
-### GitHub Solutions
+## GitHub Solutions
 
-Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions. 
+Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions
