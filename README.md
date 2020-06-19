@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](##Set Up) | [Navigating](##Navigating the website) | [Recommendations](##Recommendations) |
+| [Set Up](#set Up) | [Navigating](#navigating the website) | [Recommendations](#recommendations) |
 
 ## Set Up
 
@@ -18,11 +18,11 @@ I started the Rails server by typing `rails s` into the terminal.
 
 * `localhost:3000` - works fine and has two buttons **Create New Company** and **Companies List**
 
-* `localhost:3000/companies/new` - can navigate to the link by clicking **Create New Company** button on home page. We are presented with a form with a text input for **Name** of company and a text area to fill in for **Details**. A user can fill in duplicated company names and details (potential improvement one). They can also fill in a blank input for both entries [Bug One](##Bug One). At the bottom of the form there are two buttons. **Save** and the other **Back to companies list**.
+* `localhost:3000/companies/new` - can navigate to the link by clicking **Create New Company** button on home page. We are presented with a form with a text input for **Name** of company and a text area to fill in for **Details**. A user can fill in duplicated company names and details (potential improvement one). They can also fill in a blank input for both entries ([Bug One](#bug One)). At the bottom of the form there are two buttons. **Save** and the other **Back to companies list**.
 
-* `localhost:3000/companies/id` - the id param in the URL represents the newly added company's id. The new listing is appended to the end of the Company table in the database. However the data rendered on the table on this page always shows the first entry of the database ([Bug Two](##Bug_Two)). There are two buttons at the bottom of the page **Add Employee** and **Back to companies List**. The employees' id are incorrectly labelled on the table [Bug Three](##Bug Three).
+* `localhost:3000/companies/id` - the id param in the URL represents the newly added company's id. The new listing is appended to the end of the Company table in the database. However the data rendered on the table on this page always shows the first entry of the database ([Bug Two](#bug_Two)). There are two buttons at the bottom of the page **Add Employee** and **Back to companies List**. The employees' id are incorrectly labelled on the table ([Bug Three](#bug Three)).
 
-* `local:3000/companies/1/employees` - clicking on the **Add Employee** renders a form to fill in with two text inputs. An input for Forename and another for Surname. There are two buttons at the end of the form named **Save** and **Back to employees list**. If the user leaves one of the inputs blank they are prompted with an error message. If the user leaves the 'Forename' input blank they are given an error with 'Forename can't be blank' and 'Middlename can't be blank' [Bug Four](##Bug Four). Filling in both inputs still gives an error of 'Surname can't be blank' [Bug Five](##Bug Five).
+* `local:3000/companies/1/employees` - clicking on the **Add Employee** renders a form to fill in with two text inputs. An input for Forename and another for Surname. There are two buttons at the end of the form named **Save** and **Back to employees list**. If the user leaves one of the inputs blank they are prompted with an error message. If the user leaves the 'Forename' input blank they are given an error with 'Forename can't be blank' and 'Middlename can't be blank' ([Bug Four](#bug Four)). Filling in both inputs still gives an error of 'Surname can't be blank' ([Bug Five](#bug Five)).
 
 * `local:3000/companies` - this page renders a table listing all the companies that are saved in the database. There are two buttons for each listing called **Show** and **Destroy**. Destroy prompts the user with an alert and asks if they are sure they would like delete this listing. The show button will navigate the user to the page `localhost:3000/companies/id`. At the bottom of the table there is a button that navigates to creating a new company.
 
@@ -32,7 +32,7 @@ I started the Rails server by typing `rails s` into the terminal.
 
 I would recommend setting validation to adding a company into the database similar to where the Forename and Surname fields are required to be filled when adding an employee.
 
-## Bug_Two
+## Bug Two
 
 The path in the URL shows the correct id for the company but the table always displays the first company from the database. I think that there should be a conditional statement inside a loop to extract the correct company from the active record database and render the employees information onto the table.
 
