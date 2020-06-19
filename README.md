@@ -101,4 +101,4 @@ The form label and text field were not the same, this meant that it could not ge
 
 ## GitHub Solutions
 
-Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions.
+Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the app that has been corrected.
