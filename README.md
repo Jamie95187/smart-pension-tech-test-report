@@ -78,15 +78,18 @@ Upon further inspection into the database I would need to refactor how the Emplo
 
 ### Solution to Bug Four
 
-Adding an extra field inside the new employee view is similar to the input field for forename and surname. To make the middlename parameter optional I deleted it from the validate parameters inside the employee model.
+Adding an extra field inside the new employee view is the same as adding the forename text input. 
+
+<p align="center">
+<img src="./images/solution-bug-four-b.png"  title="image of solution to bug four b" width="95%" height="380" />
+</p>
+
+To make the middlename parameter optional I deleted it from the validate parameters inside the employee model. The below code shows the updated Employee Model.
 
 <p align="center">
 <img src="./images/solution-bug-four-a.png"  title="image of solution to bug four" width="500" height="110" />
 </p>
 
-<p align="center">
-<img src="./images/solution-bug-four-b.png"  title="image of solution to bug four b" width="95%" height="380" />
-</p>
 
 ### Solution to Bug Five
 
@@ -98,4 +101,4 @@ The form label and text field were not the same, this meant that it could not ge
 
 ## GitHub Solutions
 
-Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions
+Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions.
