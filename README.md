@@ -52,5 +52,10 @@ These are potential solutions that can be made to the code to fix these issues.
 
 ### Solution to Bug One
 
-This bug can be fixed by navigating to the Company Model in the path `'.app/models/company/rb'` and adding the line `validate :name, presnce, true`. Shown below:
+This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presnce, true`. Shown below:
 ![Image Solution to bug one](./images/solution-bug-one.png)
+
+### Solution to Bug Two
+
+Deleting the line 11 in the Company Controller fixes this bug, this file can be found at `.app/controllers/companies_controller.rb` The Company variable was being referenced to the first entry in the Company Database. Refer to the image below:
+![Image Solution to bug two](./images/solution-bug-two.png)
