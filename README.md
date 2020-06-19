@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](##Set-Up) | [Navigating](##Navigating-the-website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions)
+| [Set Up](##Set-Up) | [Navigating](##Navigating-the-website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions) | [GitHub Solution](##GitHub-Solutions)
 
 ## Set Up
 
@@ -77,6 +77,10 @@ Adding an extra field inside the new employee view is similar to the input field
 
 ### Solution to Bug Five
 
-The form label and text field were not the same, this meant that it could not get a surname input from the user. Renaming the form text field to surname fixed this bug.
+The form label and text field were not the same, this meant that it could not get a surname input from the user. Renaming the form text field to surname fixed this bug. The three input fields looks like this inside the employee/new view.
 
 ![Image solution to bug five](./images/solution-bug-five.png)
+
+### GitHub Solutions
+
+Here is a [link](https://github.com/Jamie95187/smart-pension-fixes) to the solutions. 
