@@ -90,7 +90,7 @@ Adding an extra field inside the new employee view is similar to the input field
 
 ### Solution to Bug Five
 
-The form label and text field were not the same, this meant that it could not get a surname input from the user. Renaming the form text field to surname fixed this bug. The three input fields looks like this inside the employee/new view.
+The form label and text field were not the same, this meant that it could not get a surname input from the user and it was no possible to add a new employee because the surname field was required. Renaming the form text field to surname fixed this bug. The three input fields looks like this inside the employees/new path view.
 
 <p align="center">
 <img src="./images/solution-bug-five.png"  title="image of solution to bug five" width="510" height="240" />
