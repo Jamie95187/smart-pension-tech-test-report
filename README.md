@@ -64,3 +64,5 @@ Deleting the line 11 in the Company Controller fixes this bug, this file can be 
 
 Upon further inspection into the database I would need to refactor how the Employee table and Company are connected. The image below shows that the table correctly renders the Employee ID stored within the database so I believe this is not one of the three suggested bugs.
 ![Image Solution to bug three](./images/solution-bug-three.png)
+
+### Solution to Bug Four
