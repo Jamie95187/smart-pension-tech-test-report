@@ -54,7 +54,7 @@ These are potential solutions that can be made to the code to fix these issues.
 
 ### Solution to Bug One
 
-This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presence, true`. Shown below:
+This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presence: true`. Shown below:
 
 <p align="center">
 <img src="./images/solution-bug-one.png"  title="image of solution to bug one" width="600" height="120" />
