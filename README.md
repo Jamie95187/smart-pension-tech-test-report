@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](##Set Up) | [Navigating](##Navigating the website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions)
+| [Set Up](##Set-Up) | [Navigating](##Navigating-the-website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions)
 
 ## Set Up
 
@@ -51,3 +51,6 @@ Users are unable to add employees to any of the companies even though it only sh
 These are potential solutions that can be made to the code to fix these issues.
 
 ### Solution to Bug One
+
+This bug can be fixed by navigating to the Company Model in the path `'.app/models/company/rb'` and adding the line `validate :name, presnce, true`. Shown below:
+[Solution to bug one](./images/solution-bug-one)
