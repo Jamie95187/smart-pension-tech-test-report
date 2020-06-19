@@ -8,7 +8,7 @@ Cloning repository with `git clone git@github.com:smartpension/smart-cs-support-
 
 Following the instructions to run the application and using the command `bin/setup`. The gem dependencies and databases were set up via the bundle installation.
 
-![Image of database installation](./images/database-setup.png)
+![Image of database installation 10x50, 10%](./images/database-setup.png)
 
 I started the Rails server by using the `rails s` command in terminal.
 
