@@ -53,20 +53,30 @@ These are potential solutions that can be made to the code to fix these issues.
 ### Solution to Bug One
 
 This bug can be fixed by navigating to the Company Model in the path `'.app/models/company.rb'` and adding the line `validate :name, presnce, true`. Shown below:
+
 ![Image Solution to bug one](./images/solution-bug-one.png)
 
 ### Solution to Bug Two
 
 Deleting the line 11 in the Company Controller fixes this bug, this file can be found at `.app/controllers/companies_controller.rb` The Company variable was being referenced to the first entry in the Company Database. Refer to the image below:
+
 ![Image Solution to bug two](./images/solution-bug-two.png)
 
 ### Solution to Bug Three
 
 Upon further inspection into the database I would need to refactor how the Employee table and Company are connected. The image below shows that the table correctly renders the Employee ID stored within the database so I believe this is not one of the three suggested bugs.
+
 ![Image Solution to bug three](./images/solution-bug-three.png)
 
 ### Solution to Bug Four
 
 Adding an extra field inside the new employee view is similar to the input field for forename and surname. To make the middlename parameter optional I deleted it from the validate parameters inside the employee model.
+
 ![Image solution to bug four a](./images/solution-bug-four-a.png)
 ![Image solution to bug four b](./images/solution-bug-four-b.png)
+
+### Solution to Bug Five
+
+The form label and text field were not the same, this meant that it could not get a surname input from the user. Renaming the form text field to surname fixed this bug.
+
+![Image solution to bug five](./images/solution-bug-five.png)
