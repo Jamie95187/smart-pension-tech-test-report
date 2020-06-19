@@ -53,4 +53,4 @@ These are potential solutions that can be made to the code to fix these issues.
 ### Solution to Bug One
 
 This bug can be fixed by navigating to the Company Model in the path `'.app/models/company/rb'` and adding the line `validate :name, presnce, true`. Shown below:
-![Image Solution to bug one](./images/solution-bug-one)
+![Image Solution to bug one](./images/solution-bug-one.png)
