@@ -59,3 +59,8 @@ This bug can be fixed by navigating to the Company Model in the path `'.app/mode
 
 Deleting the line 11 in the Company Controller fixes this bug, this file can be found at `.app/controllers/companies_controller.rb` The Company variable was being referenced to the first entry in the Company Database. Refer to the image below:
 ![Image Solution to bug two](./images/solution-bug-two.png)
+
+### Solution to Bug Three
+
+Upon further inspection into the database I would need to refactor how the Employee table and Company are connected. The image below shows that the table correctly renders the Employee ID stored within the database so I believe this is not one of the three suggested bugs.
+![Image Solution to bug three](./images/solution-bug-three.png)
