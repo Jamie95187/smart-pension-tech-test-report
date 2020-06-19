@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](##Set Up) | [Navigating](##Navigating the website) | [Recommendations](##Recommendations) |
+| [Set Up](##Set Up) | [Navigating](##Navigating the website) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions)
 
 ## Set Up
 
@@ -10,9 +10,7 @@ Following the instructions to run the application and using the command `bin/set
 
 ![Image of database installation](./images/database-setup.png)
 
-I started the Rails server by typing `rails s` into the terminal.
-
-![Image of starting rails](./images/starting-rails.png)
+I started the Rails server by using the `rails s` command in terminal.
 
 ## Navigating the website
 
@@ -28,22 +26,28 @@ I started the Rails server by typing `rails s` into the terminal.
 
 ## Recommendations
 
-## Bug One
+### Bug One
 
 I would recommend setting validation to adding a company into the database similar to where the Forename and Surname fields are required to be filled when adding an employee.
 
-## Bug Two
+### Bug Two
 
 The path in the URL shows the correct id for the company but the table always displays the first company from the database. I think that there should be a conditional statement inside a loop to extract the correct company from the active record database and render the employees information onto the table.
 
-## Bug Three
+### Bug Three
 
-The id's for the employees on the table are labelled incorrectly. I think they should be labelled from 1 to x where x is the number of employees at the given company. They are currently labelled from 1 to y where y is the total number of employees at all companies combined. This is replicated by destroying the Mickey's Plaice company and clicking on a Show button.
+The id's for the employees on the table are labelled incorrectly. I think they should be labelled from `1` to `x` where `x` is the number of employees at the given company. They are currently labelled from `1` to `y` where `y` is the total number of employees at all companies combined. This is replicated by destroying the Mickey's Plaice company and clicking on a Show button.
 
-## Bug Four
+### Bug Four
 
 I'm not sure about precise definition of middlename, but I would recommend making a third input field labelled Middlename in between Forename and Surname. However this field would be optional unlike the other two because not all people have middlenames.
 
-## Bug Five
+### Bug Five
 
 Users are unable to add employees to any of the companies even though it only shows the list of employees from the first company inside the database. The error displayed is 'Surname can't be blank' even after filling in both fields. I suggest using the similar verification code for Forename and Surname, this will maintain reusable code and keep the Controller slim.
+
+## Possible Solutions
+
+These are potential solutions that can be made to the code to fix these issues.
+
+### Solution to Bug One
