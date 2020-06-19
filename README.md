@@ -16,7 +16,7 @@ I started the Rails server by using the `rails s` command in terminal.
 
 * `localhost:3000` - works fine and has two buttons **Create New Company** and **Companies List**
 
-* `localhost:3000/companies/new` - can navigate to the link by clicking **Create New Company** button on home page. We are presented with a form with a text input for **Name** of company and a text area to fill in for **Details**. A user can fill in duplicated company names and details (potential improvement one). They can also fill in a blank input for both entries ([Bug One](#bug-One)). At the bottom of the form there are two buttons. **Save** and the other **Back to companies list**.
+* `localhost:3000/companies/new` - can navigate to the link by clicking **Create New Company** button on home page. We are presented with a form with a text input for **Name** of company and a text area to fill in for **Details**. They can also fill in a blank input for both entries ([Bug One](#bug-One)). At the bottom of the form there are two buttons. **Save** and the other **Back to companies list**.
 
 * `localhost:3000/companies/id` - the id param in the URL represents the newly added company's id. The new listing is appended to the end of the Company table in the database. However the data rendered on the table on this page always shows the first entry of the database ([Bug Two](#bug-Two)). There are two buttons at the bottom of the page **Add Employee** and **Back to companies List**. The employees' id are incorrectly labelled on the table ([Bug Three](#bug-Three)).
 
@@ -66,3 +66,7 @@ Upon further inspection into the database I would need to refactor how the Emplo
 ![Image Solution to bug three](./images/solution-bug-three.png)
 
 ### Solution to Bug Four
+
+Adding an extra field inside the new employee view is similar to the input field for forename and surname. To make the middlename parameter optional I deleted it from the validate parameters inside the employee model.
+![Image solution to bug four a](./images/solution-bug-four-a.png)
+![Image solution to bug four b](./images/solution-bug-four-b.png)
