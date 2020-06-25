@@ -1,6 +1,6 @@
 # Smart Pension Tech Test
 
-| [Set Up](## Set-Up) | [Navigating](##Navigating-the-website-and-finding-the-bugs) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions) | [GitHub Solutions](##GitHub-Solutions) |
+| [Set Up](#Set-Up) | [Navigating](##Navigating-the-website-and-finding-the-bugs) | [Recommendations](##Recommendations) | [Solutions](##Possible-Solutions) | [GitHub Solutions](##GitHub-Solutions) |
 
 ## Set Up
 
